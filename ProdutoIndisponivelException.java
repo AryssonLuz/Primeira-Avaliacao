@@ -1,6 +1,3 @@
-public class ProdutoIndisponivelException extends EcommerceException {
-
-    public ProdutoIndisponivelException(String produto) {
-        super("Produto indisponível: " + produto);
-    }
+public class ProdutoIndisponivelException extends EstoqueException {
+    public ProdutoIndisponivelException(String mensagem) { super(mensagem); }
 }
